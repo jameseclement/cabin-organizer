@@ -1,0 +1,8 @@
+<h1>Camp Flatiron Kids List</h1>
+
+
+<ul>
+<% @kids.each do |kid| %>
+<li><%= link_to kid.name, kid_path(kid) %></li>
+<% end %>
+</ul>

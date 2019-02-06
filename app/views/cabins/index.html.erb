@@ -1,0 +1,17 @@
+<h1>Camp Flatiron Cabin List</h1>
+
+
+<ul>
+<% @cabins.each do |cabin| %>
+<li><%= link_to cabin.name, cabin_path(cabin) %>
+<ul>
+  <%cabin.kids.each do |kid| %>
+  <li> <%= link_to kid.name, kid_path(kid) %> </li>
+  <% end%>
+</ul>
+</li>
+<% end %>
+</ul>
+
+<%= link_to "Add a cabin", new_cabin_path   %><br><br>
+<%= link_to "Add a camper", new_kid_path   %>

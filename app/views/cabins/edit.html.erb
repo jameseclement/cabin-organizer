@@ -1,0 +1,7 @@
+<h1>Edit Cabin <%= @cabin.name %></h1>
+
+<%= render "form" %>
+
+
+
+<%= link_to 'Remove Cabin', @cabin, method: :delete, data: { confirm: 'Are you sure?' } %>

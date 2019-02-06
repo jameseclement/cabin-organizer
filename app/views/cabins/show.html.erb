@@ -1,0 +1,8 @@
+<h1><%= @cabin.name %></h1>
+<h2>Leader: Counselor <%= @cabin.leader_last %></h2>
+<h2>Assistant: Counselor <%= @cabin.assistant_last %></h2>
+<h2>Gender: <%= @cabin.gender%></h2>
+<h2>Capacity:<%= @cabin.capacity %></h2>
+<h2>Year:<%= @cabin.year%></h2>
+
+<%= link_to "Edit this Cabin", edit_cabin_path(@cabin) %>

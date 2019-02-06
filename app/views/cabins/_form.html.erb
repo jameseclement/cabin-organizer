@@ -1,0 +1,18 @@
+
+<%= form_for @cabin do |f|%>
+
+<%= f.label :name, "Cabin Name:" %>
+<%= f.text_field :name %><br><br>
+
+<%= f.label :leader_last, "Leader" %>
+<%= f.text_field :leader_last %><br><br>
+<%= f.label :assistant_last, "Assistant"%>
+<%= f.text_field :assistant_last %><br><br>
+<%= f.label :gender %>
+<%= f.select :gender, ["Boys", "Girls"] %><br><br>
+<%= f.label :capacity %>
+<%= f.select :capacity, (1..12) %><br><br>
+<%= f.label :year %>
+<%= f.select :year, (1..10) %><br><br>
+<%= f.submit :submit! %>
+<% end %>
